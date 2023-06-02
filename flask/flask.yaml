@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask
+  labels:
+    app: flask
+    service: flask
+spec:
+  ports:
+  - port: 5001
+    name: http
+  selector:
+    app: flask
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-v1
+  labels:
+    app: flask
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: flask
+        version: v1
+    spec:
+      containers:
+      - name: flask
+        image: docker.io/georgymironov2001/georgyflask:v1 #docker.io/karinakonopleva/flask:v1
+        imagePullPolicy: Always #Always
+        ports:
+        - containerPort: 5001

@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-alpine
+  labels:
+    app: nginx-alpine
+    service: nginx-alpine
+spec:
+  ports:
+  - port: 80
+    name: http
+  selector:
+    app: nginx-alpine
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-alpine-v1
+  labels:
+    app: nginx-alpine
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-alpine
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: nginx-alpine
+        version: v1
+    spec:
+      containers:
+      - name: nginx-alpine
+        image: georgy/nginx
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
