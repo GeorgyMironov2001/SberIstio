@@ -4,7 +4,7 @@ metadata:
   name: nginx-alpine-gateway
 spec:
   selector:
-    istio: ingressgateway # use istio default controller
+    istio: ingressgateway 
   servers:
   - port:
       number: 80
@@ -26,6 +26,8 @@ spec:
   - match:
     - uri:
         prefix: /pokemon
+    - uri:
+        prefix: /WhoHasAbility
     route:
     - destination:
         host: flask

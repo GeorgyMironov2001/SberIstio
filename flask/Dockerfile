@@ -12,4 +12,4 @@ EXPOSE 5001
 
 ENTRYPOINT [ "python3" ]
 
-CMD ["app/view.py"]
+CMD ["app/pokemon.py"]

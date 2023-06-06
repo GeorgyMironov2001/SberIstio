@@ -4,10 +4,10 @@ metadata:
   name: flask-gateway
 spec:
   selector:
-    istio: ingressgateway # use istio default controller
+    istio: ingressgateway 
   servers:
   - port:
-      number: 15443
+      number: 12121
       name: http
       protocol: HTTP
     hosts:
@@ -26,6 +26,8 @@ spec:
   - match:
     - uri:
         prefix: /pokemon
+    - uri:
+        prefix: /WhoHasAbility 
     route:
     - destination:
         host: flask
