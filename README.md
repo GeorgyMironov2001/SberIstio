@@ -10,3 +10,6 @@
 4) Открыть minikube tunnel в другом окне
 
 5) Запросы вида curl 127.0.0.1/pokemon/"Имя покемона" и curl 127.0.0.1/WhoHasAbility/"Имя способности"
+
+![image](https://github.com/GeorgyMironov2001/SberIstio/assets/61285161/58fe2c77-d195-405b-9fbc-7728e70d41ed)
+
