@@ -1,5 +1,7 @@
 # SberIstio
 Для запуска
+
+
 0) minikube start --driver=docker --memory 5000
 
 1) export PATH=$PWD/bin:$PATH - из папки с istio
