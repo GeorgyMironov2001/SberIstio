@@ -9,5 +9,4 @@
 3) kubectl label namespace default istio-injection=enabled
 4) Открыть minikube tunnel в другом окне
 
-5) Запросы вида curl 127.0.0.1/pokemon/"Имя покемона"
-6)              curl 127.0.0.1/WhoHasAbility/"Имя способности"
+5) Запросы вида curl 127.0.0.1/pokemon/"Имя покемона" и curl 127.0.0.1/WhoHasAbility/"Имя способности"
