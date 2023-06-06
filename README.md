@@ -13,3 +13,6 @@
 
 ![image](https://github.com/GeorgyMironov2001/SberIstio/assets/61285161/58fe2c77-d195-405b-9fbc-7728e70d41ed)
 
+![image](https://github.com/GeorgyMironov2001/SberIstio/assets/61285161/8c6a37d8-012c-4cc7-8a9f-8fa009761b00)
+
+
