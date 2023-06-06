@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: docker.io/georgymironov2001/georgyflask:v1 #docker.io/karinakonopleva/flask:v1
+        image: docker.io/georgymironov2001/georgyflask:v1
         imagePullPolicy: Always #Always
         ports:
         - containerPort: 5001
