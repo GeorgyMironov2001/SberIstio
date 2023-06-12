@@ -13,3 +13,6 @@
 
 Для запроса запустить get_info_about.sh <pokemon или WhoHasAbility> <имя покемона или имя способности>
 
+
+
+![image](https://github.com/GeorgyMironov2001/SberIstio/assets/61285161/e4400e73-6956-4311-ae62-576df323b591)
