@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-service-cm
+  namespace: default
+data:
+  default.conf: |-
+    server {
+        listen 80;
+        location /pokemon {
+            proxy_pass http://flask-service/pokemon;
+        }
+        location /WhoHasAbility {
+            proxy_pass http://flask-service/WhoHasAbility;
+        }
+    }
