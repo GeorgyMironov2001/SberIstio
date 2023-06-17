@@ -2,7 +2,7 @@
 Для запуска
 
 
-0) minikube start --driver=docker --memory 5000
+0) minikube start --driver=docker --memory 4096
 
 1) export PATH=$PWD/bin:$PATH - из папки с istio
 2) istioctl manifest apply --set profile=demo
